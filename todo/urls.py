@@ -20,4 +20,5 @@ from todos import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('todos/', views.todo_list),
+    path('todos/<int:pk>', views.todo_delete, name="todo_delete"),
 ]
